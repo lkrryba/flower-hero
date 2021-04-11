@@ -1,0 +1,91 @@
+body { 
+  margin: 0; 
+  padding: 0; 
+}
+
+body,
+.btn {
+  font-weight: 400;
+  font-family: 'Merriweather', serif;
+  letter-spacing: 1px;
+}
+
+.hero {
+  color: white;
+  position: relative;
+  height: 100vh;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1em 2em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+  
+.hero::before {
+  content: "";
+  background:  #9dd3ec;
+  background-image: url("images/flowers.jpg");
+  background-size: cover; 
+  background-position: center;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  filter: blur(1.5px);
+  z-index: -1;
+}
+
+.logo {
+  margin: 0;
+  position: relative;
+background-image: linear-gradient(to right, purple,  orange);
+  font-size: 2rem;
+  letter-spacing: -4px;
+  -webkit-background-clip: text;
+  max-width: 400px;
+-webkit-text-fill-color: transparent; 
+  padding-right: 0.5em;
+}
+
+.site-title {
+  font-weight: 300;
+  border: 3px solid white;
+  max-width: 52%;
+  padding: 1em 2em;
+  border-radius: 5px;               
+}
+
+
+strong,
+.btn,
+.logo {
+  font-weight: 700;
+}
+
+.btn {
+  background: orange;
+  background-image: linear-gradient(to right, purple,  orange);
+  width: 30%;
+  padding: 1.2em 2em;
+  color: white;
+  border-radius: 20px;
+  text-transform: uppercase;  
+  border: none;    
+}
+
+.btn:hover,
+.btn:focus {
+  cursor: pointer;
+  background-image: linear-gradient(to right, orange,  purple);
+}
+
+.btn:active {
+   transform: scale(0.96);
+}
+
+
+/* Photo credit - Annie Spratt on Unsplash - https://unsplash.com/photos/WBpr_yH0Frg */

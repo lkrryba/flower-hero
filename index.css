@@ -42,12 +42,14 @@ body,
 .logo {
   margin: 0;
   position: relative;
-background-image: linear-gradient(to right, purple,  orange);
+  max-width: 400px;
+  background-image: linear-gradient(to right, purple,  orange);
+  color: purple;
   font-size: 2rem;
   letter-spacing: -4px;
+  background-clip: text;
   -webkit-background-clip: text;
-  max-width: 400px;
--webkit-text-fill-color: transparent; 
+  -webkit-text-fill-color: transparent; 
   padding-right: 0.5em;
 }
 

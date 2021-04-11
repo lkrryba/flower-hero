@@ -41,7 +41,7 @@ body,
 
 .logo {
   margin: 0;
-  position: relative;
+  /* position: relative; */
   max-width: 400px;
   background-image: linear-gradient(to right, purple,  orange);
   color: purple;
@@ -87,6 +87,21 @@ strong,
 
 .btn:active {
    transform: scale(0.96);
+}
+
+
+@media only screen and (min-width: 600px) {
+  .logo {
+    font-size: 3rem;
+  }
+
+  .btn {
+    max-width: 20%;;
+  }
+
+  .delivery-text{
+    font-size: 2rem;
+  }
 }
 
 
